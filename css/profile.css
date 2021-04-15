@@ -1,0 +1,113 @@
+ .wrapper .main-container{
+	width: calc(100% - 200px);
+	margin-top: 70px;
+	margin-left: 200px;
+	padding: 15px;
+	transition: all 0.3s ease;
+
+}
+.content{
+	min-width:50%;
+	background: #ccccff;
+	margin: 20px;
+	box-sizing: border-box;
+}
+/*--------------Image arae------------------------------*/
+.image-area{
+   border-bottom:1px solid #e6e6ff;
+   margin: 0 20px;
+}
+ .edit-icon{
+	color: #fff;
+	margin-left: 96%;
+	margin-top:20px;
+	font-size: 20px;
+	margin-bottom: 0;
+
+}
+.image-area .media ul{
+	display: flex;
+	list-style: none;
+}
+.image-area .media ul li a{
+	display: block;
+	margin: 0 10px;
+	width: 35px;
+	height: 35px;
+	font-size:20px;
+	color:#009900;
+
+}
+
+.image{
+	margin: 10px 0px 0px 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.username p{
+	color: #fff;
+	font-weight: 500;
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 5px;
+	margin-left:30px; 
+}
+/*-----------------------Details area---------------------------------------*/
+.content fieldset{
+	box-sizing: border-box;
+	width: auto;
+}
+.basic-details{
+	margin:10px 20px;
+	padding: 10px;
+}
+table{
+	border-spacing: 5px;
+	
+}
+.user-detail table th{
+	text-align: left;
+
+
+}
+.user-detail table th,td{
+	font-size: 20px;
+
+}
+ 
+.save {
+	position: relative;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin:30px;
+}
+.save input{
+   
+    height: 40px;
+    margin-bottom: 40px;
+	width: 100%;
+	font-size: 25px;
+	border-radius: 5px;
+	letter-spacing:4px;
+	background: green;
+	color: #fff;
+}
+ 
+ @media screen and (max-width: 800px){
+	.content: {
+		
+		flex-direction: column;
+	}
+	.content: {
+		width: 100%;
+		 
+
+	}
+}
+@media screen and (max-width:500px ){
+	.content: {
+		width:100%;
+	}
+}

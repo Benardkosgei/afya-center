@@ -1,0 +1,30 @@
+.image{
+	height: 420px;
+	}
+ 
+.emergency p{
+	padding: 30px;
+	 letter-spacing: 1.8px;
+	 justify-content: center;
+	 align-content: center;
+	 font-weight: bold;
+	 font-size: 17px;
+
+}
+.emergency button{
+	 color: #fff;
+	 background-color:red;
+	 padding:15px 45px;
+	 letter-spacing: 1.8px;
+	 font-weight: bold;
+	 font-size: 17px;
+	border:none;
+	margin-bottom:70px;
+
+
+}
+.emergency button:hover{
+	cursor: pointer;
+
+
+ }

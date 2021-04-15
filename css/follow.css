@@ -1,0 +1,101 @@
+ .wrapper .main-container{
+ 	position: relative;
+	width: calc(100% - 200px);
+	margin-top: 70px;
+	margin-left: 200px;
+	padding: 15px;
+	transition: all 0.3s ease;
+
+}
+.contact-area{
+	background: #f1f1f1;
+	text-align: center;
+    width: calc(100% );
+	padding: 15px;
+	transition: all 0.3s ease;
+}
+.contact-area h1{
+	display: inline-block;
+	text-transform: uppercase;
+	border-bottom: 4px solid #3498db;
+	padding-bottom: 10px;
+	font-size: 20px;
+	margin-top: 15px;
+}
+.contact-info{
+	overflow: hidden;
+	padding: 20px;
+	margin: auto;
+	display: flex;
+	max-width: 1200px;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+.card{
+	background: #00004d;
+	padding: 20px;
+	margin: 0 10px;
+	width: calc(100% / 3);
+	height: 200px;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+
+}
+.card-icon{
+	font-size: 28px;
+	background:#2db300;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition: 0.3s linear;
+	cursor: pointer;
+}
+.card:hover .card-icon{
+	background: none;
+	
+	transform: scale(1.6);
+
+}
+.card p{
+	margin-top:20px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	max-height:color: #ff6348; 0;
+	opacity: 0;
+	transition: 0.3s linear;
+
+}
+.card:hover p{
+	max-height: 40px;
+	opacity: 1;
+	font-size:;
+}
+@media screen and (max-width: 800px){
+	.contact-info{
+		
+		flex-direction: column;
+	}
+	.card{
+		width: 100%;
+		max-width: 300px;
+		margin: 10px 0;
+
+	}
+}
+@media screen and (max-width:500px ){
+	.card{
+		width:100%;
+	}
+	.card p{
+		font-size:8px !important;
+	}
+}
+/*---------------------Comment Section---------------------*/
+ 

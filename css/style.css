@@ -1,0 +1,179 @@
+
+body{
+	background:#e1ecf2 !important;
+	box-sizing: border-box;
+}
+.wrapper{
+	margin: 10px;
+}
+.wrapper .top_navbar{
+	width: calc(100% - 20px);
+	height: 60px;
+	display: flex;
+	position: fixed;
+    top: 10px;
+}
+.wrapper .top_navbar .hamburger{
+	width: 70px;
+	height: 100%;
+	background: #2e4ead;
+	padding: 15px 17px;
+	border-top-left-radius: 20px;
+	cursor: pointer;
+}
+.wrapper .top_navbar .hamburger div{
+	width: 35px;
+	height: 4px;
+	background: #92a6e2;
+	margin: 5px 0;
+	border-radius: 5px;
+}
+.wrapper .top_navbar .top_menu{
+	width: calc(100% - 70px);
+	background: #fff;
+	height: 100%;
+	border-top-right-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	box-shadow: 0 1px 1px rgba(0,0,0,1);
+}
+.wrapper .top_navbar .top_menu .logo{
+	color: #2e4ead;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing:3px;
+}
+.wrapper .top_navbar .top_menu ul{
+	display: flex;
+}
+.wrapper .top_navbar .top_menu ul li a{
+	display: block;
+	margin: 0 10px;
+	width: 35px;
+	line-height: 35px;
+	border:1px solid #2e4ead;
+	text-align: center;
+	border-radius: 50%;
+	color:#2e4ead;
+
+}
+.wrapper .top_navbar .top_menu ul li a:hover{
+	background: #4360b5;
+	color: #fff;
+}
+/*++++++++++++++++++++++++++++++++++++SIDE-BAR-NAVIGATION++++++++++++++++++++++++++++++++++++++*/
+.wrapper .sidebar{
+	position: fixed;
+	top: 70px;
+	left: 10px;
+	background: #2e4ead;
+	width: 200px;
+	height: calc(100% - 80px);
+	border-bottom-left-radius: 20px;
+	transition: all 0.3s ease;
+
+}
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 20px;
+	position: relative;
+	margin-bottom: 1px;
+	color: #92a6e2;
+
+}
+/*the under lines...................................................*/
+
+.wrapper .sidebar ul li a::before{
+	content: "";
+	position: absolute;
+	width:100%;
+	height: 1px;
+	left: 0;
+	bottom: 0;
+	background: linear-gradient(to right, #2af598 0%, #009efd 100%);
+
+
+}
+.wrapper .sidebar ul li a span.icon{
+	margin-right: 10px;
+	display: inline-block;
+}
+.wrapper .sidebar ul li a span.title{
+	display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active
+{
+	background: #4360b5;
+	color: #fff;
+
+}
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+/*.............................................SIDE BAR NAVIGATION..........................*/
+.wrapper .main-container{
+	width: calc(100% - 200px);
+	margin-top: 70px;
+	margin-left: 200px;
+	padding: 15px;
+	transition: all 0.3s ease;
+}
+ 
+.wrapper.collapse .sidebar{
+	width: 70px;
+}
+.wrapper.collapse .sidebar ul li a{
+	text-align: center;
+}
+.wrapper.collapse .sidebar ul li a span.icon{
+	margin: 0;
+}
+.wrapper.collapse .sidebar ul li a span.title{
+	display: none;
+}
+.wrapper.collapse .main-container{
+	width: calc(100% - 70px);
+	margin-left: 70px;
+}
+/*___________________________The Section section_________________________________________*/
+ 
+.btncheck{
+	background: linear-gradient(to right, #2af598 0%, #009efd 100%);
+	width:260px;
+	height: 50px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	border-radius: 4px;
+	margin-top: 100px;
+}
+.check-service:hover{
+	background: #fff;
+	cursor: pointer;
+	border:1px solid green; 
+}
+.main-container .default{
+	box-sizing: border-box;
+	position: relative;
+	background: #fff !important;
+}
+.default .whyarea{
+	justify-content: "";
+	padding: 15px;
+}
+.default .whyarea p{
+	padding: 15px;
+
+}
+ 
+.main-container .item ul{
+	letter-spacing:2px;
+	margin: 40px;
+}
+.main-container .item ul li{
+	margin-bottom:10px;
+}
+ 
